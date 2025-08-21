@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+
+<!-- Forma como se faz a partir do angular 17 -->
+<ul>
+    @for (user of users; track user.id) {
+        <li>
+            {{user.id}} - {{user.userName}}
+        </li>
+    }
+</ul>
+
+<!-- Forma como se fazia antes do angular 17, trazendo a necessidade de importar o NgFor -->
+<!-- <ul>
+    <li *ngFor="let user of users">
+        {{user.id}} - {{user.userName}}
+    </li>
+</ul> -->
