@@ -1,0 +1,29 @@
+Pontuação consiste em um sistema de sinais gráficos que servem para organizar o texto, definir pausas e dar ênfase.
+
+     ponto final --> sinaliza o fim de uma frase declarativa
+     vírgula --> sinalizar os acidentes no curso do enunciado: adiçoes, interrupçoes, inserções(como parenteses), separação de ideias, anteposição da informação anterior; Não separa o sujeito do predicado com virgulas; uso antes de etc é redundante, tanto faz.
+     ponto e virgula --> indica termino de um enunciado, sinteticamente completo, que faz parte de outro enunciado (equivale a E); separação de itens, listagem(equivale a E); separação de considerandos(equivale a OU).
+     dois pontos --> inicio de uma citação ou de uma fala; inicio de uma sequencia que discrimina, desenvolve ou explica uma ideia anterior.
+     aspas --> uma citação integral, abrage o ponto final; uma citação parcial, que é parte de um período, o ponto final conclui o pensamento; um neologismo, termo estrangeiro ou gíria; termos que se quer destacar; emprega-se aspas simples, apóstrofos, no interior de outra citação com aspas duplas.
+     parenteses --> inserção de datas, de obras, de autores; intercalação de orações; intercalação de indicações cênicas.
+     travessão --> indica a fala dos personagens; inserção de uma informação extensa(inicio e fim de uma interrupção); ênfase em uma palavra ou expressão.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

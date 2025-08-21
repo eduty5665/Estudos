@@ -1,0 +1,64 @@
+ --Governança de TI--
+Governança de TI é de responsabilidade do Conselho de Administração e da alta administração da empresa. É parte integral da governança corporativa e consiste em estruturas e processos tanto organizacionais quanto de liderança responsáveis por assegurar que a TI sustente e expanda os objetivos e as estratégias da organização.
+ Governança de Ti é utilizada para descrever como a TI mede ou governa os relacionamentos de negócio; aborda a implementação de estruturas e arquiteturas para atingir com sucesso atividades em resposta ao ambiente e à estratégia organizacional; se concentra na estrutura de relacionamentos e processos para desenvolver, dirigir e controlar os recursos de TI; capacidade organizacional exercida pelos chefões a fim de controlar a formulação e implementação da estratégia de TI; estrutura de relacionamentos e processos para dirigir e controlar a empresa; parte integral da governança corporativa, consiste em processos e estruturas responsáveis por assegurar que a TI sustente e expanda seus objetivos; capacidade organizacional de controlar a formulação e implementação de estratégias de TI; especifica a estrutura de responsabilidade e direitos para encorajar comportamentos desejáveis no uso da TI; distribuição de responsabilidade e direitos entre as pessoas da organização quanto às decisões de TI; como a organização assegura que sua estratégia e praticas de TI sejam utilizadas para auxiliar a estratégia organizacional da empresa.
+
+
+    *crise de credibilidade corporativa*
+
+Alinhamento Estratégico
+  O alinhamento estratégico da TI ocorre quando as ações da TI são importantes para o pensamento estratégico organizacional.
+
+      Plano Diretor de Tecnologia da Informação (PDTI) --> Construir o PDTI é a forma de se realizar o alinhamento estratégico da TI, a partir do plano estratégico da empresa.
+
+
+
+--Planejamento Estratégico--
+   Um planejamento estratégico corporativo tem por objetivo favorecer a comunicação entre áreas, departamentos e linhas de produção, em busca do alcance das metas estabelecidas.
+
+ISO/IEC 38500: O objetivo dessa norma é orientar os dirigentes de áreas de tecnologia da informação, os auditores de TI, bem como os profissionais responsáveis por estruturar, avaliar, gerenciar ou monitorar o uso da tecnologia das informações em suas organizações. Promover o uso eficaz, eficiente e aceitável da Tecnologia da Informação (TI) em suas organizações.
+Avaliar, de forma objetiva, a governança e o gerenciamento da TI.
+
+A adoção do processo de governança, seja ela corporativa ou de TI, é uma mudança cultural e comportamental, interna e externa.
+
+
+    A eficiência de um processo é a medida de velocidade com que as entradas do processo são convertidas em suas saídas.
+
+    Já a eficácia é a medida com que as saídas satisfazem os requisitos iniciais do processo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

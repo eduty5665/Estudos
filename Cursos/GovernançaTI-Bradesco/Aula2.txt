@@ -1,0 +1,52 @@
+--Plano de Contingência--
+   O uso adequado de técnicas para avaliação e elaboração de respostas aos riscos ajuda as organizações nessas mudanças constantes e repentinas.
+   O plano de contingência complementa os procedimentos, os controles, as responsabilidades e as regras. Desse modo, o plano garante a continuidade das operações nas áreas de negócio após ocorrências que impossibilitem a utilização parcial ou total do sistema.
+
+--Risco em TI--
+   Risco de TI é o risco associado ao uso, ao gerenciamento, à operação, ao suporte, à inovação, à influência ou à adoção de TI para efetuar os negócios da organização.
+    *Mitigação e Contingencia*
+
+    Risco --> hipotetico, não corresponde a falha; probabilidade, não certeza; administrado, identificado e gerenciado.
+
+Chamamos de gerenciar riscos o processo de identificar riscos e decidir o que fazer com eles.
+Em outras palavras, cada vez mais, a TI oferece suporte aos negócios de uma organização. No entanto, ao mesmo tempo, as falhas nos serviços de TI impactam os negócios diretamente.
+
+O tipo de risco, a probabilidade de ocorrência e o impacto sobre o projeto variam ao longo do ciclo de vida. Dessa forma, é necessário identificar os riscos em todas as fases do projeto.
+
+    mitigar --> aceitar --> transferir --> eliminar
+
+
+--Continuidade dos Negócios--
+   Falhas são inevitáveis, mas a interrupção do fornecimento do serviço e a perda de dados podem ser evitados por meio do uso adequado de técnicas viáveis e de fácil compreensão.
+   Para a manutenção da disponibilidade total dos sistemas, precisamos elaborar um plano de ação. Tal plano é denominado Plano de Continuidade de Negócios ou Business Continuity Plan (BCP).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

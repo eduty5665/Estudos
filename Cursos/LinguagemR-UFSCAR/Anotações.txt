@@ -1,0 +1,162 @@
+LINGUAGEM R
+
+Ela é case sensitive
+ou seja diferencia maisculo e minusculo
+
+trabalha com scripts, que são como rotinas/arquivos
+
+sempre converter os valores
+
+
+
+COMANDOS BASICOS R
+
+Divisão --> /
+Raiz Quadrada --> sqrt(valor)
+Modulo(Resto da Divisão) --> %%
+
+
+
+ESTRUTURAS CONDICIONAIS
+
+Verifica a condição dos argumentos passados
+
+== --> igualdade
+!= --> diferença
+ > --> Comparação Maior
+ < --> Comparação Menor
+>= --> Comparação MaiorIgual
+<= --> Comparação MenorIgual
+
+
+
+ESTRUTURAS DE REPETIÇÃO
+
+For e While mais utilizadas
+
+For(x in seq(num1, num2, pula)){
+	print(x)
+}
+fazer isso ate que aquilo seja verdade
+aqui podemos ver um for simples para printar numeros em sequencia
+
+while
+fazer isso ate que aquilo seja falso
+x=1
+while(x<11){
+	print(x)
+	x=x+1
+}
+aqui podemos ver um while simples para printar numeros em sequencia
+
+seq
+função seq muito utilizada nos loops
+se não informar como deseja a sequencia
+ele usa o padrao, e pula de um em um
+retorna lista de inteiros
+Generate regular sequences. seq is a standard generic with a default method. seq.int is a primitive which can be much faster but has a few restrictions. seq_along and seq_len are very fast primitives for two common cases.
+lenght --> tamanho total da lista
+by --> quanto queremos que pule entre os numeros
+
+
+
+VARIAVEIS R
+atribuição de valor a varivel
+não precisa declarar...
+nome=valores
+
+*array simples --> c(valor,valor)*
+
+
+
+FUNÇÕES
+
+nome=function(parametro){
+   codigo
+}
+muito simples criar funções com parametros no R
+
+Funções sem parametros tem um simples diferença
+declare ela do mesmo jeito
+mas sem parametros
+no codigo voce deve definir uma variavel que receba oq o usuario digitar
+nome=function(parametro){
+   var=readline(prompt="Defina uma mensagem ao usuario")
+   var=as.integer(var)
+}
+no exemplo acima definimos a variavel var
+na primeira linha chamamos um prompt para que o usuario digite oq quiser
+na segunda linha pegamos oq ele digitou (as) e transformamos no tipo de dado desejado (integer), após isso alocamos em alguma variavel (var)
+dessa maneira podemos usar oq o usuario digitou em nosso codigo
+
+*sempre converter os valores*
+
+
+Vetores, Listas
+
+Append --> add um elemento em uma lista
+lista=append(lista, objadd)
+
+Sort --> sorteia a lista, organiza a lista em ordem crescente ou decrescente
+lista=sort(lista)#crescente
+nota=sort(nota, decreasing = TRUE)#decrescente
+
+
+Matrizes
+semelhante a vetores
+mas podendo ser acessada via diferentes indices
+nomematrix=matrix(c(vetor com dados
+		    separar por linhas e colunas ajuda),
+             byrow=TRUE, #inclui por linhas
+             nrow=3, ncol=5) #define numero de linhas e colunas
+#Colocando nome nas linhas e colunas
+rownames(nomematrix)=c("nome1","nome2","nome3") #mesmo tamanho, qtd original da matrix
+head.matrix="Avaliações"
+
+Apply --> aplica uma função aritmetica na matriz ou array
+x: matriz, ou array
+margin: 1 linhas,, 2 colunas
+fun: função que vc quer utilizar
+aplly(turma, 1, mean) #por exemplo
+
+Tapply --> aplica uma função a cada grupo de valores fornecidos por uma combinação de fatores
+x: objeto que pode ser dividido, como um vetor
+index: fator com msm comprimento de x
+fun: função a ser aplicada nos elementos de x
+
+
+Tabela
+Objeto que contem multiplos vetores do mesmo tamanho
+qualquer tipo de vetor
+data.frame --> cria-se tabelas
+nome=c("Eduardo", "Lucas", "Guilherme")
+curso=c("Superior", "Médio", "Técnico")
+idade=c(19, 20, 20)
+salario=c(400, 2800, 1300)
+sexo=c("M", "M", "M")
+df=data.frame(nome, curso, idade, salario, sexo, stringsAsFactors = FALSE)
+df
+
+cria-se varios vetores
+e depois so os junta na tabela
+stringAsFactors = FALSE
+representa que as strings não são fatores
+mas apenas strings de caracteres msm
+
+subset --> coluna e forma de subdivisão
+cria uma subtabela com os dados selecionados
+é como se vc desse um select no que vc quisesse do BD
+subset(nometabela, campo=="parametro") #ele trara outra tabela, com os dados filtrados pelo campo selecionado
+
+select --> retorna as colunas que satisfazem a subdivisão
+subset(nometabela, select=-campo) #ele vai tirar o campo selecionado e retornar o resto
+ou seja ele realiza o select, e retorna o resto
+subset(nometabela, select=campo:campo) #os dois pontos indicam o intervalo
+
+
+AUTOCOMPLETE/AJUDA
+acaso não saiba como usar determinada função
+questão de sintaxe do codigo mesmo
+colocar ?nome da função
+ou help(nome função)
+o r vai trazer a doc dele explicando como usar a função

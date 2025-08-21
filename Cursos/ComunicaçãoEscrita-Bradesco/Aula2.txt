@@ -1,0 +1,59 @@
+Analise Mofológica
+   Estudo da Anatomia das Classes de Palavras
+   Descrição Anatomica --> Estudo das partes que compõem o todo
+   Substantivo --> nomeia qualquer objeto/substancia
+   Artigo -- > determina ou generaliza o substantivo
+   Adjetivo --> atribui uma qualidade/caracteristica/estado ao substantivo
+   Pronome --> substitui ou acompanha um substantivo
+   Numeral --> atribui noção de numero ao substantivo
+   Verbo --> expressam ação, estado ou fenomeno da natureza acerca de um substantivo
+   Advérbio --> pode alterar o verbo ou adjetivo
+   Preposição --> conecta termos
+   Conjunção --> conecta orações
+   Interjeição --> expressa as manifestações emocionais
+
+   Uso do Participio
+     Regular - tinha e ser (terminação ada, ito, etc)
+     Irregular - verbos utilizados sem estar no participio com a noção do tempo no participio
+
+
+
+Analise Sintática
+   Sujeito --> Aquele que realiza a ação do verbo em questão
+   Predicado --> O que se afirma a respeito do sujeito
+
+   verbos intranstivos --> não exigem complemento
+   verbos transitivos diretos --> exigem complemento não conectado por preposição ao núcleo verbal
+   verbos transitivos indiretos --> exigem complemento conectado por preposições
+   existem verbos que são transitivos diretos e indiretos ao mesmo tempo
+
+   Crase --> ocorre quando há, existe, a junção da preposição a com o artigo a ou as; dessa forma a crase so ocorrerá com verbos que necessitam da preposição a juntamente com artigos femininos ao predicado seguinte.
+    junção da preposição a, necessidade do verbo, com o pronome demonstrativo aquela
+    junção da preposição a, necessidade do verbo, com os pronomes relativos a qual, as quais
+    facultativo --> pronomes possevivos, nomes próprios femininos, preposição até.
+    
+         Não há crase:
+             *Não houver preposição a;
+             *A palavra regida pela preposição for masculina;
+             *Não houver o artigo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
