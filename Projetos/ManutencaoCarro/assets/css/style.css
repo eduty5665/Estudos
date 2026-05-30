@@ -1,0 +1,394 @@
+.login {
+    max-width: 500px;
+    margin-top: 150px;
+}
+
+.register {
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+a {
+    color: var(--cor-verde) !important;
+}
+
+.select {
+    background-color: var(--cor-verde);
+    color: white !important;
+    border-radius: 30px;
+    border: 0px solid transparent
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.check {
+    float: right;
+}
+
+.form-check-input:checked {
+    background-color: var(--cor-verde);
+    border-color: var(--cor-verde);
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-template-2 {
+    grid-template:
+        "sidenav content"100% / 20% 1fr 0px
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidenav {
+    grid-area: sidenav;
+    background-color: lightslategray;
+    color: white;
+    position: fixed;
+    max-width: 20vw;
+}
+
+.item {
+    text-align: center;
+    font-size: 1.5em;
+    height: 100vh;
+}
+
+.sidenav>img {
+    border-radius: 300px;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    margin-top: 100px;
+
+}
+
+.botoes>a>button {
+    width: 100%;
+    color: var(--cor-verde);
+    margin-top: -6px;
+    border-radius: 0px !important;
+}
+
+.botoes>a>button:hover {
+    background-color: var(--cor-verde);
+    color: white;
+}
+
+button>a {
+    text-decoration: none !important;
+    color: white;
+}
+
+button>a:hover {
+    color: white !important;
+}
+
+.loja {
+    margin-top: 30px;
+}
+
+.logoinit {
+    max-width: 100%;
+    margin-top: 64px;
+}
+
+.info {
+    width: 100%;
+    background-color: ghostwhite;
+    text-align: end;
+    padding-right: 5px;
+    height: 30px;
+    font-size: 12pt;
+}
+
+.lista {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.card-body>.bi-truck {
+    font-size: 70pt;
+}
+
+.bi-plus-circle {
+    font-size: 100pt;
+    text-align: center;
+    color: gainsboro;
+}
+
+.cadastro {
+    max-width: 340px;
+    margin-top: 150px;
+}
+
+.more>div {
+    font-size: 11pt;
+}
+
+.more {
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.observacao {
+    background-color: gainsboro;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.data {
+    text-align: right !important;
+}
+
+.apagar {
+    text-align: right;
+    font-size: 12pt;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+#formedit {
+    font-size: 12pt;
+}
+
+#formedit>div>label {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.fidelidadelogo {
+
+    width: 600px;
+}
+
+.premio {
+    max-width: 700px;
+    margin-top: 3vh;
+}
+
+.reto {
+    text-align: -webkit-center;
+}
+
+.premios {
+    margin-top: 30px;
+    font-size: 50pt;
+    color: grey;
+}
+
+.premios>i {
+    padding: 5px;
+}
+
+.premios>i:nth-child(6) {
+    padding-left: 40px;
+}
+
+#gift {
+    display: none;
+}
+
+.tamanho {
+    font-size: 14pt;
+}
+
+.agender {
+
+    max-width: 690px;
+    margin-top: 30px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 21px;
+}
+
+#logout {
+    background-color: white;
+    border-radius: 0px 30px 30px 0px;
+    float: left;
+    margin-top: 20px;
+}
+
+#logout:hover {
+    background-color: #009045;
+}
+
+.bi-search {
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.nave {
+    padding: 10px 0px 0px 10px;
+    justify-content: center;
+}
+
+.tag {
+    font-size: 7pt !important;
+    text-align: center;
+    color: grey;
+    margin-bottom: -20px;
+    margin-top: -24px;
+}
+
+
+.btn-social {
+    position: relative;
+    padding-left: 44px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white !important;
+}
+
+.btn-social:hover {
+    color: #eee;
+}
+
+.btn-social :first-child {
+    position: absolute;
+    left: 0;
+    top: -2;
+    bottom: 0;
+    width: 40px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.termo {
+    margin-top: 30px;
+    text-align-last: center;
+}
+
+.cupom {
+    text-align-last: center;
+    font-size: 37pt;
+    color: #009045;
+    font-weight: bold;
+}
+
+.noticias>h2 {
+    color: grey;
+}
+
+.lista {
+    margin-top: -12px;
+}
+
+.cartao {
+    max-width: 400px;
+}
+
+.noticias {
+    margin-top: 55px;
+}
+
+.fotoperfil {
+    margin-left: 80%;
+    margin-top: -40%;
+    width: 75px;
+}
+
+.fadmin {
+    display: inline;
+    width: auto;
+}
+
+.fadmin1 {
+    width: auto;
+}
+
+.fotoag {
+    margin-left: 73%;
+    margin-top: -88%;
+    width: 100px;
+}
+
+.fotoag1 {
+    margin-left: 73%;
+    margin-top: -130%;
+    width: 95px;
+}
+
+.veiculo {
+    text-align: -webkit-center;
+}
+
+.check {
+    position: absolute;
+    margin-top: -31px;
+}
+
+
+@media screen and (max-width: 679px) {
+    .grid-template-2 {
+        grid-template:
+            " content"100% / 100% 1fr 0px
+    }
+
+    .sidenav {
+        display: none;
+    }
+    marquee{
+        margin-left: 37px;
+    }
+    .menu{
+        display: block!important;
+    }
+    .nave{
+        flex-direction: column!important;
+        align-items: center!important;
+        width: -webkit-fill-available;
+    }
+
+}
+.menu{
+    color: white;
+    background-color: #009045;
+    border-radius: 9px;
+    padding: 0px 5px 0px 5px;
+    font-size: 20pt;
+    max-width: min-content;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+#agendamento{
+    text-align: -webkit-center;
+}
+.teste{
+    display: flex;
+    flex-flow: wrap;
+    place-content: center;
+}
+.teste > div{
+    margin-left: 10px;
+}
+.agender1 {
+
+    max-width: 690px;
+    margin-top: 30px;
+}

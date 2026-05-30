@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="datapickerold.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="bootstrapantigo.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="datapickerold.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="adminagendar.js" defer></script>
+  <link rel="shortcut icon" href="carro.png" type="image/x-icon">
+</head>
+
+<body class="agenda">
+  <div>
+    <form action="" id="agendamento">
+      <div class="container-sm agender">
+        <div class="card">
+          <div class="card-body">
+            <div class="logo"><img src="LOGO.png" alt="" srcset="" width="200px">
+            </div>
+            <div class="cliente">
+              <h6>Dados do Cliente:</h6>
+              <div class="check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Já é cliente?
+                </label></div>
+              <input type="text" name="nome" class="form-control fadmin" placeholder="Nome do Cliente" id="nome">
+              <input type="text" name="telefone" maxlength="11" class="form-control fadmin"
+                placeholder="Telefone do Cliente" id="telefone">
+              <input type="text" name="endereco" class="form-control fadmin" placeholder="Endereço do Cliente"
+                id="endereco">
+              <input type="email" name="email" class="form-control" placeholder="Email do Cliente">
+            </div>
+            <div class="veiculo">
+              <h6>Veículo:</h6>
+              <input type="text" name="veiculo" required class="form-control fadmin1" style="text-align: center;"
+                maxlength="7" minlength="7" placeholder="Placa do Veículo">
+              <br>
+              <div class="teste">
+              <div class="form-check form-check-inline tamanho ">
+                <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1" checked>
+                <label class="form-check-label tamanho" for="inlineRadio1">Carro</label>
+              </div>
+              <div class="form-check form-check-inline tamanho">
+                <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="option2">
+                <label class="form-check-label tamanho" for="inlineRadio2">Caminhão</label>
+              </div>
+              <div class="form-check form-check-inline tamanho">
+                <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                  value="option3">
+                <label class="form-check-label tamanho" for="inlineRadio3">Trator</label>
+              </div>
+              <div class="form-check form-check-inline tamanho">
+                <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                  value="option4">
+                <label class="form-check-label tamanho" for="inlineRadio4">Moto</label>
+              </div>
+              <div class="form-check form-check-inline tamanho">
+                <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio5"
+                  value="option5">
+                <label class="form-check-label tamanho" for="inlineRadio5">Outros</label>
+              </div>
+            </div>
+          </div>
+            <h6 style="margin-top: 15px; margin-bottom: 15px;"> O que voce quer trocar? </h6>
+           <div class="teste">
+            <div class="form-check form-check-inline tamanho">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label tamanho" for="inlineCheckbox1">Filtro de Óleo</label>
+            </div>
+            <div class="form-check form-check-inline tamanho">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label tamanho" for="inlineCheckbox2">Filtro de Ar</label>
+            </div>
+            <div class="form-check form-check-inline tamanho">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label tamanho" for="inlineCheckbox3">Filtro de Combustível</label>
+            </div>
+            <div class="form-check form-check-inline tamanho">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+              <label class="form-check-label tamanho" for="inlineCheckbox3">Filtro de Ar Condicionado</label>
+            </div>
+            <div class="form-check form-check-inline tamanho">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+              <label class="form-check-label tamanho" for="inlineCheckbox3">Filtro Separador</label>
+            </div>
+            <div class="form-check form-check-inline tamanho">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+              <label class="form-check-label tamanho" for="inlineCheckbox3">Filtro Hidráulico</label>
+            </div>
+          </div>
+            <h6 style="margin-top: 15px; margin-bottom: 15px;"> Qual óleo você quer usar?<i> (opcional)</i> </h6>
+            <input type="text" class="form-control datetime" name="oleo" placeholder="Marca do óleo">
+            <div class="form-floating" style="margin-top: 20px;">
+              <textarea class="form-control tamanho" placeholder="Faltou alguma coisa?" id="floatingTextarea"
+                style="height: 100px; font-size: 12pt;" name="observacao"></textarea>
+            </div>
+            <h6 style="margin-top: 15px; margin-bottom: 15px;"> Quando você quer trocar? </h6>
+             
+            <div class='input-group date' id='datetimepicker5'>
+                <input type='text' class="form-control" name="vdata"/>
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            
+            </div>
+          </div>
+
+    </form>
+    <button class="btn btn-success btn-block mb-4" id="agendar" style="margin-top: 30px;">Marcar Agendamento</button>
+  </div>
+  <h5 class="avisando"></h5>
+  </div>
+  <script type="text/javascript">
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
+      $(function () {
+    $('#datetimepicker5').datetimepicker({
+    locale: 'pt-br',
+    format: 'DD/MM/YYYY HH:00',
+    daysOfWeekDisabled: [0,6],
+    enabledHours: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    minDate: date,
+    });
+    });
+    </script>
+</body>
+
+</html>

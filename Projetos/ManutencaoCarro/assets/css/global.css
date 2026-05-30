@@ -1,0 +1,10 @@
+:root {
+  /* Colors */
+  --cor-verde: #009045;
+  --cor-verdet: #00904660;
+
+}
+
+a {
+  color: var(--cor-verde) !important;
+}

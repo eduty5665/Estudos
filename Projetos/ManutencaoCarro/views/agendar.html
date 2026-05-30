@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Atendimento</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="datapickerold.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="bootstrapantigo.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="datapickerold.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="agendar.js" defer></script>
+  <link rel="shortcut icon" href="carro.png" type="image/x-icon">
+</head>
+
+<body class="agenda">
+  <div class="menu"><i class="bi bi-list"></i></div>
+  <div>
+    <section class="grid grid-template-2">
+      <div class="item content">
+        <div class="info">
+          <marquee></marquee>
+        </div>
+        <form action="" id="agendamento">
+          <div class="container-sm agender">
+            <div class="card">
+              <div class="card-body">
+                <div class="logo"><img src="LOGO.png" alt="" srcset="" width="200px">
+                </div>
+                <div class="teste">
+                <select class="form-select" aria-label="Default select example" name="select"
+                  style="    text-transform: uppercase;
+                  border-radius: 5px;
+                  padding: 2px;
+                  border: solid 1px darkgrey;
+                  width: -webkit-fill-available;">
+                </select></div>
+                <h4 style="margin-top: 15px; margin-bottom: 15px;"> O que voce quer trocar? </h4>
+                <div class="teste">
+                <div class="form-check form-check-inline tamanho">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                  <label class="form-check-label tamanho" for="inlineCheckbox1">Filtro de Óleo</label>
+                </div>
+                <div class="form-check form-check-inline tamanho">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label tamanho" for="inlineCheckbox2">Filtro de Ar</label>
+                </div>
+                <div class="form-check form-check-inline tamanho">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label tamanho" for="inlineCheckbox3">Filtro de Combustível</label>
+                </div>
+                <div class="form-check form-check-inline tamanho">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                  <label class="form-check-label tamanho" for="inlineCheckbox3">Filtro de Ar Condicioonado</label>
+                </div>
+                <div class="form-check form-check-inline tamanho">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                  <label class="form-check-label tamanho" for="inlineCheckbox3">Filtro Separador</label>
+                </div>
+                <div class="form-check form-check-inline tamanho">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                  <label class="form-check-label tamanho" for="inlineCheckbox3">Filtro Hidráulico</label>
+                </div>
+              </div>
+                <h4 style="margin-top: 15px; margin-bottom: 15px;"> Qual óleo você quer usar?<i> (opcional)</i> </h4>
+                <input type="text" class="form-control datetime" name="oleo" placeholder="Marca do óleo">
+                <div class="form-floating" style="margin-top: 20px;">
+                  <textarea class="form-control tamanho" placeholder="Faltou alguma coisa?" id="floatingTextarea"
+                    style="height: 100px; font-size: 12pt;" name="observacao"></textarea>
+                </div>
+                <h4 style="margin-top: 15px; margin-bottom: 15px;"> Quando você quer trocar? </h4>
+                <div class='input-group date' id='datetimepicker5'>
+                  <input type='text' class="form-control" name="vdata"/>
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                </div>
+              </div>
+
+        </form>
+        <button class="btn btn-success btn-block mb-4" id="agendar" style="margin-top: 20px;">Agendar Veículo</button>
+      </div>
+  </div>
+<h5 class="avisando"></h5>
+
+  <footer>
+    <div class="footer"><a href="https://www.distribuidoragranderio.com.br/"><img src="footer.jpg" alt="" srcset=""
+          width="150px"></a></div>
+  </footer>
+  </div>
+</body>
+
+
+<div class="item sidenav">
+  <img src="image.jpg" id="fotomenu" alt="" srcset="">
+  <h4 id="nomemenu"></h4>
+  <button type="button" class="btn btn-outline-success" id="logout" style="    color: #009045;"><i class="bi bi-box-arrow-left"></i> Logout</button>
+  <div class="botoes">
+    <a href="/inicio"><button type="button" class="btn btn-light">Início</button></a>
+    <a href="/agendar"><button type="button" class="btn btn-light select">Agendar Serviço</button></a>
+    <a href="/historico"><button type="button" class="btn btn-light">Agendamentos Anteriores</button></a>
+    <a href="/veiculos"><button type="button" class="btn btn-light  ">Meus Veículos</button> </a>
+    <a href="configuracao"><button type="button" class="btn btn-light ">Editar Dados</button></a>
+    <a href="https://api.whatsapp.com/send?phone=5542991557036"><button type="button"
+        class="btn btn-light">Suporte</button> </a>
+    <h4 class="loja">Conheça nossos produtos:</h4>
+    <a href="https://www.distribuidoragranderio.com.br" target="_blank"><button type="button" class="btn btn-light">Site
+        <i class="bi bi-arrow-up-right-square"></i></button></a>
+    <img class="logoinit" src="logo.png" alt="" srcset="">
+  </div>
+</div>
+</section>
+</div>
+<script type="text/javascript">
+const date = new Date();
+date.setDate(date.getDate() - 1);
+  $(function () {
+$('#datetimepicker5').datetimepicker({
+locale: 'pt-br',
+format: 'DD/MM/YYYY HH:00',
+disabledDates: ['2023/01/01', '2023/03/27','2023/04/21', '2023/05/01', '2023/09/07', '2023/10/12', '2023/11/02', '2023/11/15', '2023/12/25', '2022/10/12', '2022/11/02', '2022/11/15', '2022/12/25'],
+daysOfWeekDisabled: [0,6],
+enabledHours: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+minDate: date,
+});
+});
+</script>
+</body>
+
+</html>
