@@ -1,0 +1,50 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/deteccao-fraude
+collecting ... collected 26 items
+
+testes/test_deteccao_fraude.py::TestDados::test_gerar_base_tem_colunas_esperadas PASSED [  3%]
+testes/test_deteccao_fraude.py::TestDados::test_gerar_base_tamanho_correto PASSED [  7%]
+testes/test_deteccao_fraude.py::TestDados::test_gerar_base_taxa_fraude_aproximada PASSED [ 11%]
+testes/test_deteccao_fraude.py::TestDados::test_gerar_base_sem_valores_nulos PASSED [ 15%]
+testes/test_deteccao_fraude.py::TestDados::test_carregar_dados_sem_arquivo_usa_fallback PASSED [ 19%]
+testes/test_deteccao_fraude.py::TestDados::test_carregar_dados_com_caminho_customizado PASSED [ 23%]
+testes/test_deteccao_fraude.py::TestPreparacaoFeatures::test_preparar_features_retorna_x_y PASSED [ 26%]
+testes/test_deteccao_fraude.py::TestPreparacaoFeatures::test_preparar_features_remove_class_de_x PASSED [ 30%]
+testes/test_deteccao_fraude.py::TestPreparacaoFeatures::test_preparar_features_cria_colunas_derivadas PASSED [ 34%]
+testes/test_deteccao_fraude.py::TestPreparacaoFeatures::test_preparar_features_amount_log_nao_negativo PASSED [ 38%]
+testes/test_deteccao_fraude.py::TestPreparacaoFeatures::test_preparar_features_levanta_erro_sem_coluna_class PASSED [ 42%]
+testes/test_deteccao_fraude.py::TestSplit::test_dividir_treino_teste_proporcao PASSED [ 46%]
+testes/test_deteccao_fraude.py::TestSplit::test_dividir_treino_teste_estratificado PASSED [ 50%]
+testes/test_deteccao_fraude.py::TestBalanceamento::test_undersampling_classes_iguais PASSED [ 53%]
+testes/test_deteccao_fraude.py::TestBalanceamento::test_oversampling_smote_classes_iguais PASSED [ 57%]
+testes/test_deteccao_fraude.py::TestBalanceamento::test_oversampling_smote_aumenta_dataset PASSED [ 61%]
+testes/test_deteccao_fraude.py::TestModelos::test_treinar_regressao_logistica_prediz PASSED [ 65%]
+testes/test_deteccao_fraude.py::TestModelos::test_treinar_random_forest_prediz PASSED [ 69%]
+testes/test_deteccao_fraude.py::TestModelos::test_construir_pipeline_treina_e_prediz PASSED [ 73%]
+testes/test_deteccao_fraude.py::TestModelos::test_random_forest_tem_feature_importances PASSED [ 76%]
+testes/test_deteccao_fraude.py::TestAvaliacao::test_avaliar_modelo_retorna_metricas_esperadas PASSED [ 80%]
+testes/test_deteccao_fraude.py::TestAvaliacao::test_avaliar_modelo_salva_graficos PASSED [ 84%]
+testes/test_deteccao_fraude.py::TestAvaliacao::test_avaliar_modelo_sem_salvar_graficos PASSED [ 88%]
+testes/test_deteccao_fraude.py::TestThreshold::test_threshold_customizado_binario PASSED [ 92%]
+testes/test_deteccao_fraude.py::TestThreshold::test_threshold_mais_baixo_gera_mais_positivos PASSED [ 96%]
+testes/test_deteccao_fraude.py::TestIntegracao::test_pipeline_completo_fim_a_fim PASSED [100%]
+
+=============================== warnings summary ===============================
+testes/test_deteccao_fraude.py::TestModelos::test_treinar_regressao_logistica_prediz
+testes/test_deteccao_fraude.py::TestAvaliacao::test_avaliar_modelo_retorna_metricas_esperadas
+testes/test_deteccao_fraude.py::TestAvaliacao::test_avaliar_modelo_salva_graficos
+testes/test_deteccao_fraude.py::TestAvaliacao::test_avaliar_modelo_sem_salvar_graficos
+  /usr/local/lib/python3.12/dist-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 200 iteration(s) (status=1):
+  STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+  
+  Increase the number of iterations to improve the convergence (max_iter=200).
+  You might also want to scale the data as shown in:
+      https://scikit-learn.org/stable/modules/preprocessing.html
+  Please also refer to the documentation for alternative solver options:
+      https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+    n_iter_i = _check_optimize_result(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 26 passed, 4 warnings in 3.82s ========================
