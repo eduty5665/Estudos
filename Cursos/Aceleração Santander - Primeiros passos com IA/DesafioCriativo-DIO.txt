@@ -1,0 +1,16 @@
+Desafio Criativo: Simplificando Tarefas e Ganhando Foco com IA
+Prompt Final
+
+Quero que a IA gere um resumo executivo semanal de indicadores comerciais para mim, gestor comercial, com o objetivo de identificar rapidamente desvios de meta, clientes em risco e oportunidades, sem precisar analisar planilhas brutas manualmente.
+
+Considere o seguinte contexto: sou gestor comercial da EMBREMAC/EBCB, uso TOTVS Protheus para pedidos e faturamento, e recebo dados de vendas em planilhas Excel extraídas do sistema.
+
+O conteúdo deve ter formato de resumo executivo, com no máximo 1 página, dividido em tópicos (metas x realizado, destaques positivos, pontos de atenção, ações recomendadas).
+
+Evite jargão técnico de TI, linguagem excessivamente formal, e afirmações sem dado que as sustente.
+
+Construção por etapas
+
+Intenção: Resumo executivo semanal de indicadores comerciais, para gestor comercial, com objetivo de identificar desvios de meta, clientes em risco e oportunidades rapidamente.
+
+Contexto e restrições: Gestor comercial EMBREMAC/EBCB, dados vindos do TOTVS Protheus via planilhas Excel. Formato de até 1 página, dividido em tópicos. Evitar jargão técnico, formalidade excessiva e afirmações sem respaldo em dados.
