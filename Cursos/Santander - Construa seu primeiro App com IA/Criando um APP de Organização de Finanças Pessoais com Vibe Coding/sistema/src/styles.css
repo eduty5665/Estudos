@@ -1,0 +1,149 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — Bolso Claro
+ * Paleta calma em verde e azul, mobile-first, PT-BR.
+ * Todos os valores em oklch. Fontes: Outfit (títulos) + Figtree (texto).
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-income: var(--income);
+  --color-expense: var(--expense);
+  --color-sky-soft: var(--sky-soft);
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --shadow-soft: 0 8px 30px oklch(0.4 0.06 200 / 0.08);
+  --shadow-float: 0 12px 40px oklch(0.35 0.08 190 / 0.16);
+  --animate-rise: rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  --radius: 1rem;
+  --background: oklch(0.982 0.008 175);
+  --foreground: oklch(0.3 0.045 215);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.3 0.045 215);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.3 0.045 215);
+  --primary: oklch(0.52 0.115 163);
+  --primary-foreground: oklch(0.99 0.008 175);
+  --secondary: oklch(0.935 0.028 185);
+  --secondary-foreground: oklch(0.36 0.06 200);
+  --muted: oklch(0.95 0.015 180);
+  --muted-foreground: oklch(0.53 0.03 210);
+  --accent: oklch(0.92 0.045 195);
+  --accent-foreground: oklch(0.34 0.06 205);
+  --destructive: oklch(0.58 0.19 27);
+  --destructive-foreground: oklch(0.99 0.008 175);
+  --border: oklch(0.915 0.02 185);
+  --input: oklch(0.915 0.02 185);
+  --ring: oklch(0.6 0.1 170);
+  --income: oklch(0.55 0.125 162);
+  --expense: oklch(0.585 0.14 38);
+  --sky-soft: oklch(0.66 0.09 235);
+}
+
+.dark {
+  --background: oklch(0.22 0.03 220);
+  --foreground: oklch(0.96 0.01 180);
+  --card: oklch(0.27 0.035 215);
+  --card-foreground: oklch(0.96 0.01 180);
+  --popover: oklch(0.27 0.035 215);
+  --popover-foreground: oklch(0.96 0.01 180);
+  --primary: oklch(0.72 0.12 163);
+  --primary-foreground: oklch(0.2 0.04 200);
+  --secondary: oklch(0.33 0.04 210);
+  --secondary-foreground: oklch(0.96 0.01 180);
+  --muted: oklch(0.32 0.03 210);
+  --muted-foreground: oklch(0.72 0.03 200);
+  --accent: oklch(0.35 0.05 205);
+  --accent-foreground: oklch(0.96 0.01 180);
+  --destructive: oklch(0.66 0.18 27);
+  --destructive-foreground: oklch(0.99 0.008 175);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.72 0.12 163);
+  --income: oklch(0.72 0.13 162);
+  --expense: oklch(0.7 0.13 38);
+  --sky-soft: oklch(0.72 0.09 235);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background-image: linear-gradient(
+      135deg,
+      oklch(0.46 0.1 175) 0%,
+      oklch(0.52 0.11 200) 55%,
+      oklch(0.56 0.1 235) 100%
+    );
+  }
+
+  .app-canvas {
+    max-width: 30rem;
+    margin-inline: auto;
+    min-height: 100dvh;
+    position: relative;
+  }
+}
