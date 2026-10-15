@@ -172,3 +172,5 @@ A análise precisa da variável `LOVABLE_API_KEY` no servidor, que o Lovable for
 ## Autor
 
 **Eduardo Lucas Lemes Januario** · Gestão de Tecnologia da Informação · IFSP Catanduva
+#   G e r a d o r C u r r - c u l o s A T S F r i e n d l y L o v a b l e - D I O  
+ 
